@@ -5,6 +5,90 @@
  */
 
 /* Add your CSS here */
+.wrapper ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container > li{
+  border-radius: 0.5rem;
+  padding: 10px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.grid-container .item-1 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #54c897;
+  transition: background-color 0.5s;
+}
+
+.grid-container .item-2 {
+ grid-row-start: 2;
+ grid-row-end: 2;
+ grid-column-start: 1;
+ grid-column-end: 3;
+ background-color: #039a5b;
+ transition: background-color 0.5s;
+}
+
+.grid-container .item-3 {
+grid-row-start: 1;
+grid-row-end: 1;
+grid-column-start: 4;
+grid-column-end: 4;
+background-color: #54c8b1;
+transition: background-color 0.5s;
+}
+
+.grid-container .item-4 {
+grid-row-start: 1;
+grid-row-end: 3;
+grid-column-start: 5;
+grid-column-end: 7;
+background-color: rgb(21, 155, 3);
+transition: background-color 0.5s;
+}
+
+.grid-container .item-5 {
+grid-row-start: 2;
+grid-row-end: 3;
+grid-column-start: 3;
+grid-column-end: 5;
+background-color: rgb(1, 106, 62);
+transition: background-color 0.5s;
+}
+
+.grid-container .item-1:hover{
+  background-color: #348060;
+}
+  
+.grid-container .item-2:hover{
+background-color: #02824d;
+}
+
+.grid-container .item-3:hover{
+  background-color: #409685;
+}
+  
+.grid-container .item-4:hover{
+  background-color: rgb(14, 113, 1);
+}
+  
+.grid-container .item-5:hover{
+  background-color: rgb(2, 84, 50);
+}
+  
+
 
 
 
